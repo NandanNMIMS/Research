@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Bootstrap CSS -->
+    <!-- Local Bootstrap CSS -->
+    <link rel="stylesheet" href="../style/bs.md.css">
+
+    <!-- Font Awesome CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+
+
+    <link rel="stylesheet" href="../style/admin-style.css" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.1/css/select2.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="../style/admin-simpleAlert.css" />
+
+    <title>ADMIN - Dashboard</title>
+    <link rel="icon" type="image/x-icon" href="/vf../images.jpg" />
+</head>
+<body>
+    <!-- This is left sidebar  -->
+    <aside class="left-sidebar" id="openSideBar">
+        <div class="left-sidebar-logo">
+            <a href="/vf/dashboard">
+                <img src="../images/logo-nmims.png" class="nmims-logo" />
+            </a>
+            <!-- This is left sidebar content -->
+        </div>
+        <ul class="offset-list offcanvas-body p-0 sidebar-body" id="left-sidebar-accordion">
+            <a href="../html/dashboard.html" class="offset-list-item-link ">
+                <li class="active-sidebar"><img src="../images/dashboard.png" class="ps-3 pe-2 sidebar-icon"> Dashboard
+                </li>
+            </a>
+            <!-- research -->
+            <li data-toggle="collapse" data-target="#collapse" aria-expanded="true">
+                <a class="offset-list-item-link">
+                    <img src="../images/Research.png" class="ps-2 pe-2 sidebar-icon">Research
+                </a>
+                <div class="collapse" id="collapse">
+                    <ul class="nav flex-column ml-2">
+                        <a class="offset-list-item-link" href="../html/research-journal.html">
+                            <li class="nav-item">
+                                <img src="../images/Research.png"  class="ps-3 pe-2 icon">
+                                Research Journal Paper
+                            </li>
+                        </a>
+                        <a class="offset-list-item-link" href="../html/book-publication-main.html">
+                            <li class="nav-item">
+                                <img src="../images/book-publication.png"  class="ps-3 pe-2 icon">
+                                Book Publications
+                            </li>
+                        </a>
+                    
+                    
+                        <a class="offset-list-item-link" href="../html/conference-publication.html">
+                            <li class="nav-item">
+                                <img src="../images/conference.png"  class="ps-3 pe-2 icon">
+                                    Conference Publications
+                            </li>
+                        </a>
+                    
+                    
+                        <a class="offset-list-item-link" href="../html/patent-submission.html">
+                            <li class="nav-item">
+                                <img src="../images/submission-grant.png"  class="ps-3 pe-2 icon">
+                                Patent Submissions and Grant
+                            </li>
+                        </a>
+                                            
+                        <a class="offset-list-item-link" href="../html/research-project.html">
+                            <li class="nav-item">
+                                <img src="../images/consultancy.png"  class="ps-3 pe-2 icon">
+                                Research Project, Consultancy
+                            </li>
+                        </a>                        
+                            
+                        <a class="offset-list-item-link" href="../html/research-seminar.html">
+                            <li class="nav-item">
+                                <img src="../images/meeting.png"  class="ps-3 pe-2 icon">
+                                Research Seminars at NMIMS
+                            </li>
+                        </a>
+                    
+                        <a class="offset-list-item-link" href="../html/research-seminar.html">
+                            <li class="nav-item">
+                                <img src="../images/meeting.png"  class="ps-3 pe-2 icon">
+                                Case Study
+                            </li>
+                        </a>
+                          
+                    </ul>
+                </div>
+            </li>
+            <a href="../html/teaching-excellance.html" class="offset-list-item-link">
+                <li><img src="../images/excellence.png" height="24" class="ps-3 pe-2 sidebar-icon"> Teaching Excellence
+                </li>
+            </a>
+            <a href="../html/meeting-stackholders.html" class="offset-list-item-link">
+                <li><img src="../images/meeting.png" height="24" class="ps-3 pe-2 sidebar-icon"> Meeting Stakeholders</li>
+            </a>
+            <a href="../html/branding-advertising.html" class="offset-list-item-link">
+                <li><img src="../images/advertising.png" height="24" class="ps-3 pe-2 sidebar-icon">
+                    Branding & Advertising
+                </li>
+            </a>
+            <a href="#" class="offset-list-item-link">
+                <li><img src="../images/incentive.png" class="ps-3 pe-2 sidebar-icon"> Research Incentive Page
+                </li>
+            </a>
+            <a href="#" class="offset-list-item-link">
+                <li><img src="../images/edition.png" height="24" class="ps-3 pe-2 sidebar-icon">
+                    Chronicle Edition
+                </li>
+            </a>
+            <a href="#" class="offset-list-item-link">
+                <li><img src="../images/policy.png" height="24" class="ps-3 pe-2 sidebar-icon">
+                    Incentive Policy
+                </li>
+            </a>
+            <a href="#" class="offset-list-item-link">
+                <li><img src="../images/school.png" height="24" class="ps-3 pe-2 sidebar-icon">
+                    Other School Incentive Policy
+                </li>
+            </a>
+            <a href="#" class="offset-list-item-link">
+                <li><img src="../images/analysis.png" height="24" class="ps-3 pe-2 sidebar-icon">Sample Analysis
+                </li>
+            </a>
+            <a href="#" class="offset-list-item-link">
+                <li><img src="../images/logout.png" class="ps-2 pe-2 sidebar-icon"> Logout</li>
+            </a>
+        </ul>
+    </aside>
+    <!-- Navbar section -->
+    <header>
+        <nav class="top-navbar d-flex justify-content-xl-end justify-content-between   align-items-center"
+            id="navbarHeading">
+            <a href="/vf/dashboard"><img src="../images/logo-nmims.png" alt="NMIMS LOGO"
+                    class="nmims-logo-smalldevices me-auto"></a>
+            <div class="navbar-logo d-none me-auto">
+                <a href="/vf/dashboard"> <img src="../images/logo-nmims.png" class="nmims-logo"> </a>
+            </div>
+            <!--Close Arrow toggle button -->
+            <button class="me-auto left-sidebar-toggle" style="border: none; outline: none; background-color: white;"
+                id="closeToggleBtn">
+                <i class="fa-solid fa-angles-left"></i>
+            </button>
+
+            <ul class="top-navbar__list">
+
+                <li style="color: #fc6964;"><img src="../images/research-admin.png" class="ps-3 pe-2">&nbsp;32200193_ADMIN
+                </li>
+
+                <li><a href="" class="d-none text-dark"><img src="../images/notification.png" alt=""> Notification</a>
+                </li>
+
+                <div class="btn-group">
+                    <button class="btn btn-white dropdown-toggle" type="button" id="defaultDropdown"
+                        data-bs-toggle="dropdown" data-bs-auto-close="true" aria-expanded="false">
+                        <img src="../images/user.png" alt="">
+                        Hi! ADMIN
+                    </button>
+
+                    <!-- Dropdown menu userprofile -->
+                    <ul class="dropdown-menu userprofile-dropdown-menu" aria-labelledby="defaultDropdown"
+                        id="showDropDown">
+                        <li>
+                            <a class="dropdown-item" href="/vf/change-password">
+                                <i class="fas fa-user-cog"></i>
+                                Change Password
+                            </a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="/vf/manage-account">
+                                <i class="fas fa-user-circle"></i>
+                                Manage account
+                            </a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="/vf/logout">
+                                <i class="fas fa-sign-out-alt"></i>
+                                Signout
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </ul>
+            <div class="hamburger-smalldevices"><img src="../images/HamburgerIcon.png" alt="" width="24px" height="20px" id="hamburger">
+            </div>
+        </nav>
+    </header>
+    <!-- This is right side section -->
+    <main class="main" id="mainContent">
+        <div class="base-section coustom-section">
+            <div class="card table-card">
+                <div class="card-header table-card-header text-uppercase d-flex align-items-center justify-content-between">
+                    <div>
+                        <h5>Edited Book Publications</h5>
+                    </div>
+                    <div>
+                        <a class="btn btn-danger" href="#"><i class="fas fa-download"></i> Download </a> 
+                        <button class="btn add-btn ms-auto" data-toggle="modal" data-target="#sudyModel" >
+                            <i class="fas fa-plus"></i>
+                        </button>                        
+                    </div>
+                </div>
+                
+                <div class="card-body table-responsive">
+                    <div class="d-flex justify-content-between">
+                        <div>
+                            <label>Show Entry</label>
+                            <select class="form-select" id="changeEntry">
+                                   <option value="10">10</option>
+                                   <option value="25">25</option>
+                                   <option value="50">50</option>
+                                   <option value="100">100</option>
+                                   <option value="150">150</option>
+                                   <option value="200">200</option>
+                                   <option value="250">250</option>
+                                   <option value="300">300</option>
+                                   <option value="350">350</option>
+                                   <option value="400">400</option>
+                                   <option value="500">500</option>
+                                   <option value="800">800</option>
+                                   <option value="1000">1000</option>
+                            </select>
+                        </div>
+                        <div>
+                            <div class="table-searchbar-container"><button type="button"><i class="fas fa-search"></i></button><input type="search" id="searchkeyword" placeholder="Enter keywords" class="table-searchbar"></div>
+                        </div>
+                    </div>
+        
+                    <table class="table custom-table" id="facultyTable">
+                        <thead>
+                            <tr>
+                                <th>Sr.No.</th>
+                                <th>Author's name</th>
+                                <th>Publication Year</th>
+                                <th>Title of Chapter</th>
+                                <th>Editor name</th>
+                                <th>Book title</th>
+                                <th>Edition</th>
+                                <th>ISBN Number</th>
+                                <th>URL of book</th>
+                                <th>DOI of book</th>
+                                <th>Action</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>Ankit Pandey</td>
+                                <td>2022</td>
+                                <td>The Ghost</td>
+                                <td>Sohan Chauhan</td>
+                                <td>The Hungry Ghost</td>
+                                <td>5</td>
+                                <td>ISBN254625</td>
+                                <td>link</td>
+                                <td>DOI258468</td>
+                                <td>
+                                    <a class="edit-btn" data-faculty-id="83"><i class="fas fa-eye text-dark"></i></a>
+                                    <a class="edit-btn" data-faculty-id="86"><i class="fa fa-edit text-success"></i></a>
+                                    <a class="delete-btn" data-faculty-id="86"><i class="fa fa-trash text-danger"></i></a>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    </div>
+                </div>
+            </div>    
+        </div>     
+    </main>
+
+    <!-- Model -->
+    <div class="modal fade" id="sudyModel" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-xl modal-fullscreen" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Edited Book Publications</h5>
+                    <div class="close" data-dismiss="modal" data-target="#exampleModal" id="close">
+                        <i class="fas fa-times fa-2x"></i>
+                    </div>
+                    <!-- <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button> -->
+                </div>
+                <div class="modal-body custom-model">
+                    <!-- Form code section -->
+                    <div class="base-section coustom-section mt-5 shadow">
+                        <h3 class="text-center mb-4">Edited Book Publications</h3>
+                        <div class="row">
+                            <!-- Author's name -->
+                            <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                                <label for="authorName" class="form-label fw-bold">Author's name</label>
+                                <input type="text" name="author-name" id="authorName" class="form-control"
+                                    placeholder="Author's name">
+                            </div>
+                            <!-- Publication year -->
+                            <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                                <label for="publicationYear" class="form-label fw-bold">Publication year</label>
+                                <input type="number" name="year" id="publicationYear" class="form-control"
+                                    placeholder="Publication year" min="1945" max="2024"/>
+                            </div>
+                            <!-- Title of Chapter -->
+                            <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                                <label for="chapterTitle" class="form-label fw-bold">Title of Chapter</label>
+                                <input type="text" name="chapter-title" id="chapterTitle" class="form-control"
+                                    placeholder="Title of Chapter"/>
+                            </div>
+                            <!-- Editor name -->
+                            <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                                <label for="editorName" class="form-label fw-bold">Editor name</label>
+                                <input type="text" name="editor-name" id="editorName" class="form-control"
+                                    placeholder="Editor name"/>
+                            </div>
+                            <!-- Book title -->
+                            <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                                <label for="bookTitle" class="form-label fw-bold">Book Title</label>
+                                <input type="text" name="book-title" id="bookTitle" class="form-control"
+                                    placeholder="Book title"/>
+                            </div>
+                            <!-- Page numbers/ Page Range -->
+                            <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                                <label for="pageRange" class="form-label fw-bold">Page numbers/ Page Range</label>
+                                <input type="text" name="page-range" id="pageRange" class="form-control"
+                                    placeholder="Page numbers"/>
+                            </div>
+                            <!-- Edition -->
+                            <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                                <label for="titleOfBookSeries" class="form-label fw-bold">Edition</label>
+                                <input type="text" name="BookSeries" id="titleOfBookSeries" class="form-control"
+                                    placeholder="Edition" />
+                            </div>
+                            <!-- Editor(s) of the book -->
+                            <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                                <label for="editorOfBook" class="form-label fw-bold">Editor(s) of the book</label>
+                                <input type="text" name="book-editor" id="editorOfBook" class="form-control"
+                                    placeholder="Editor(s) of the book"/>
+                            </div>
+                            <!-- ISBN Number -->
+                            <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                                <label for="ISBNNumber" class="form-label fw-bold">
+                                    ISBN Number
+                                </label>
+                                <input type="text" name="ISBN-Number" id="ISBNNumber" class="form-control"
+                                    placeholder="ISBN Number">
+                            </div>
+                            <!-- Publisher name -->
+                            <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                                <div class="form-group">
+                                    <label for="publisherName" class="form-label  fw-bold">
+                                        Publisher Name
+                                    </label>
+                                    <input type="text" name="publisher-name" id="publisherName"
+                                        placeholder="Publisher Name" class="form-control  " />
+                                </div>
+                            </div>
+                            <!-- Place of Publication -->
+                            <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                                <div class="form-group">
+                                    <label for="placeOfPublication" class="form-label  fw-bold">
+                                        Place of Publication
+                                    </label>
+                                    <input type="text" name="publication-place" id="placeOfPublication"
+                                        placeholder="Place of Publication" class="form-control" />
+                                </div>
+                            </div>
+                            <!-- Publisher Category-->
+                            <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                                <label for="publisherCatergory" class="form-label fw-bold mb-3">Publisher Category</label><br>
+                                <div class="form-check-inline">
+                                    <label for="international" class="form-check-label" >
+                                      <input type="radio" class="form-check-input" id="international" name="radio" value="International"> International
+                                    </label>
+                                </div>
+                                <div class="form-check-inline">
+                                    <label for="national" class="form-check-label" >
+                                      <input type="radio" class="form-check-input" id="national" name="radio" value="National"> National
+                                    </label>
+                                </div>
+                            </div>
+                            <!-- Upload the supporting documents -->
+                            <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                                <label for="upload" class="form-label fw-bold ">Upload the supporting documents</label>
+                                <input type="file" name="upload-file" class="form-control " id="upload" placeholder="upload-file">
+                            </div>
+                            
+                            <!-- DOI of book -->
+                            <div class="col-lg-4 col-md-6 col-sm-12 mb-4"  >
+                                <label for="Weblink" class="form-label fw-bold ">DOI of Book</label>
+                                <input type="url" name="web-link" id="Weblink" placeholder="DOI -Unique ID" class="form-control "/>
+                            </div>
+                            <!-- URL of book -->
+                            <div class="col-lg-4 col-md-6 col-sm-12 mb-4"  >
+                                <label for="urlOfBook" class="form-label fw-bold ">URL of book</label>
+                                <input type="url" name="book-url" id="urlOfBook" placeholder="URL of book" class="form-control "/>
+                            </div>
+                            <!-- No. of NMIMS Authors -->
+                            <div class="col-lg-4 col-md-6 col-sm-12 mb-4"  >
+                                <label for="NMIMSAuthors" class="form-label fw-bold ">No. of NMIMS Authors</label>
+                                <input type="text" name="nmims-authors" id="NMIMSAuthors" placeholder="No. of NMIMS Authors" class="form-control "/>
+                            </div>
+                            <!-- Name of NMIMS Authors -->
+                            <div class="col-lg-4 col-md-6 col-sm-12 mb-4"  >
+                                <label for="nameOfAuthors" class="form-label fw-bold ">Name of NMIMS Authors</label>
+                                <input type="text" name="web-link" id="nameOfAuthors" placeholder="Name of NMIMS Authors" class="form-control "/>
+                            </div>
+                            <!-- NMIMS Campus - Author -->
+                            <div class="col-lg-4 col-md-6 col-sm-12 mb-4"  >
+                                <label for="campusAuthors" class="form-label fw-bold ">Name of NMIMS Campus Authors</label>
+                                <input type="url" name="web-link" id="campusAuthors" placeholder="Name of NMIMS Campus Authors" class="form-control "/>
+                            </div>
+                            <!--NMIMS School - Author-->
+                            <div class="col-lg-4 col-md-6 col-sm-12 mb-4"  >
+                                <label for="campusAuthors" class="form-label fw-bold ">Name of NMIMS School Authors</label>
+                                <input type="url" name="web-link" id="campusAuthors" placeholder="Name of NMIMS School Authors" class="form-control "/>
+                            </div>
+                            <!-- Button -->
+                            <div class="modal-footer">
+                                <!-- Add your modal footer buttons if needed -->
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                <button class="btn btn-md btn-success" id="submitBtn">Submit</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Bootstrap js -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="../js/script.js"></script>
+</body>
+
+</html>

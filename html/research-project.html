@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Bootstrap CSS -->
+    <!-- Local Bootstrap CSS -->
+    <link rel="stylesheet" href="../style/bs.md.css">
+
+    <!-- Font Awesome CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+
+
+    <link rel="stylesheet" href="../style/admin-style.css" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.1/css/select2.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="../style/admin-simpleAlert.css" />
+
+    <title>ADMIN - Dashboard</title>
+    <link rel="icon" type="image/x-icon" href="/vf../images.jpg" />
+</head>
+
+<body>
+    <!-- This is left sidebar  -->
+    <aside class="left-sidebar" id="openSideBar">
+        <div class="left-sidebar-logo">
+            <a href="/vf/dashboard">
+                <img src="../images/logo-nmims.png" class="nmims-logo" />
+            </a>
+            <!-- This is left sidebar content -->
+        </div>
+        <ul class="offset-list offcanvas-body p-0 sidebar-body" id="left-sidebar-accordion">
+            <a href="../html/dashboard.html" class="offset-list-item-link ">
+                <li class="active-sidebar"><img src="../images/dashboard.png" class="ps-3 pe-2 sidebar-icon"> Dashboard
+                </li>
+            </a>
+            <!-- research -->
+            <li data-toggle="collapse" data-target="#collapse" aria-expanded="true">
+                <a class="offset-list-item-link" >
+                    <img src="../images/Research.png" class="ps-2 pe-2 sidebar-icon">Research
+                </a>
+                <div class="collapse" id="collapse">
+                    <ul class="nav flex-column ml-2">
+                        <a class="offset-list-item-link" href="../html/research-journal.html">
+                            <li class="nav-item">
+                                <img src="../images/Research.png"  class="ps-3 pe-2 icon">
+                                Research Journal Paper
+                            </li>
+                        </a>
+                        <a class="offset-list-item-link" href="../html/book-publication-main.html">
+                            <li class="nav-item">
+                                <img src="../images/book-publication.png"  class="ps-3 pe-2 icon">
+                                Book Publications
+                            </li>
+                        </a>
+                    
+                    
+                        <a class="offset-list-item-link" href="../html/conference-publication.html">
+                            <li class="nav-item">
+                                <img src="../images/conference.png"  class="ps-3 pe-2 icon">
+                                    Conference Publications
+                            </li>
+                        </a>
+                    
+                    
+                        <a class="offset-list-item-link" href="../html/patent-submission.html">
+                            <li class="nav-item">
+                                <img src="../images/submission-grant.png"  class="ps-3 pe-2 icon">
+                                Patent Submissions and Grant
+                            </li>
+                        </a>
+                                            
+                        <a class="offset-list-item-link" href="../html/research-project.html">
+                            <li class="nav-item">
+                                <img src="../images/consultancy.png"  class="ps-3 pe-2 icon">
+                                Research Project, Consultancy
+                            </li>
+                        </a>                        
+                            
+                        <a class="offset-list-item-link" href="../html/research-seminar.html">
+                            <li class="nav-item">
+                                <img src="../images/meeting.png"  class="ps-3 pe-2 icon">
+                                Research Seminars at NMIMS
+                            </li>
+                        </a>
+                    
+                        <a class="offset-list-item-link" href="../html/case-study.html">
+                            <li class="nav-item">
+                                <img src="../images/study.png"  class="ps-3 pe-2 icon">
+                                Case Study
+                            </li>
+                        </a>
+                          
+                    </ul>
+                </div>
+            </li>
+            <a href="../html/teaching-excellance.html" class="offset-list-item-link">
+                <li><img src="../images/excellence.png" height="24" class="ps-3 pe-2 sidebar-icon"> Teaching Excellence
+                </li>
+            </a>
+            <a href="../html/meeting-stackholders.html" class="offset-list-item-link">
+                <li><img src="../images/meeting.png" height="24" class="ps-3 pe-2 sidebar-icon"> Meeting Stakeholders</li>
+            </a>
+            <a href="../html/branding-advertising.html" class="offset-list-item-link">
+                <li><img src="../images/advertising.png" height="24" class="ps-3 pe-2 sidebar-icon">
+                    Branding & Advertising
+                </li>
+            </a>
+            <a href="#" class="offset-list-item-link">
+                <li><img src="../images/incentive.png" class="ps-3 pe-2 sidebar-icon"> Research Incentive Page
+                </li>
+            </a>
+            <a href="#" class="offset-list-item-link">
+                <li><img src="../images/edition.png" height="24" class="ps-3 pe-2 sidebar-icon">
+                    Chronicle Edition
+                </li>
+            </a>
+            <a href="#" class="offset-list-item-link">
+                <li><img src="../images/policy.png" height="24" class="ps-3 pe-2 sidebar-icon">
+                    Incentive Policy
+                </li>
+            </a>
+            <a href="#" class="offset-list-item-link">
+                <li><img src="../images/school.png" height="24" class="ps-3 pe-2 sidebar-icon">
+                    Other School Incentive Policy
+                </li>
+            </a>
+            <a href="#" class="offset-list-item-link">
+                <li><img src="../images/analysis.png" height="24" class="ps-3 pe-2 sidebar-icon">Sample Analysis
+                </li>
+            </a>
+            <a href="#" class="offset-list-item-link">
+                <li><img src="../images/logout.png" class="ps-2 pe-2 sidebar-icon"> Logout</li>
+            </a>
+        </ul>
+    </aside>
+    <!-- Navbar section -->
+    <header>
+        <nav class="top-navbar d-flex justify-content-xl-end justify-content-between   align-items-center"
+            id="navbarHeading">
+            <a href="/vf/dashboard"><img src="../images/logo-nmims.png" alt="NMIMS LOGO"
+                    class="nmims-logo-smalldevices me-auto"></a>
+            <div class="navbar-logo d-none me-auto">
+                <a href="/vf/dashboard"> <img src="../images/logo-nmims.png" class="nmims-logo"> </a>
+            </div>
+            <!--Close Arrow toggle button -->
+            <button class="me-auto left-sidebar-toggle" style="border: none; outline: none; background-color: white;"
+                id="closeToggleBtn">
+                <i class="fa-solid fa-angles-left"></i>
+            </button>
+
+            <ul class="top-navbar__list">
+
+                <li style="color: #fc6964;"><img src="../images/research-admin.png" class="ps-3 pe-2">&nbsp;32200193_ADMIN
+                </li>
+
+                <li><a href="" class="d-none text-dark"><img src="../images/notification.png" alt=""> Notification</a>
+                </li>
+
+                <div class="btn-group">
+                    <button class="btn btn-white dropdown-toggle" type="button" id="defaultDropdown"
+                        data-bs-toggle="dropdown" data-bs-auto-close="true" aria-expanded="false">
+                        <img src="../images/user.png" alt="">
+                        Hi! ADMIN
+                    </button>
+
+                    <!-- Dropdown menu userprofile -->
+                    <ul class="dropdown-menu userprofile-dropdown-menu" aria-labelledby="defaultDropdown"
+                        id="showDropDown">
+                        <li>
+                            <a class="dropdown-item" href="/vf/change-password">
+                                <i class="fas fa-user-cog"></i>
+                                Change Password
+                            </a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="/vf/manage-account">
+                                <i class="fas fa-user-circle"></i>
+                                Manage account
+                            </a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="/vf/logout">
+                                <i class="fas fa-sign-out-alt"></i>
+                                Signout
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </ul>
+            <div class="hamburger-smalldevices"><img src="../images/HamburgerIcon.png" alt="" width="24px" height="20px" id="hamburger">
+            </div>
+        </nav>
+    </header>
+    <!-- This is Table -->
+    <main class="main" id="mainContent">
+        <div class="base-section coustom-section">
+            <div class="card table-card">
+                <div class="card-header table-card-header text-uppercase d-flex align-items-center justify-content-between">
+                    <div>
+                        <h5>Research Project, Consultancy</h5>
+                    </div>
+                    <div>
+                        <a class="btn btn-danger" href="#"><i class="fas fa-download"></i> Download </a> 
+                        <button class="btn add-btn ms-auto" data-toggle="modal" data-target="#sudyModel" >
+                            <i class="fas fa-plus"></i>
+                        </button>                        
+                    </div>
+                </div>
+                
+                <div class="card-body table-responsive">
+                    <div class="d-flex justify-content-between">
+                        <div>
+                            <label>Show Entry</label>
+                            <select class="form-select" id="changeEntry">
+                                   <option value="10">10</option>
+                                   <option value="25">25</option>
+                                   <option value="50">50</option>
+                                   <option value="100">100</option>
+                                   <option value="150">150</option>
+                                   <option value="200">200</option>
+                                   <option value="250">250</option>
+                                   <option value="300">300</option>
+                                   <option value="350">350</option>
+                                   <option value="400">400</option>
+                                   <option value="500">500</option>
+                                   <option value="800">800</option>
+                                   <option value="1000">1000</option>
+                            </select>
+                        </div>
+                        <div>
+                            <div class="table-searchbar-container"><button type="button"><i class="fas fa-search"></i></button><input type="search" id="searchkeyword" placeholder="Enter keywords" class="table-searchbar"></div>
+                        </div>
+                    </div>
+        
+                    <table class="table custom-table" id="facultyTable">
+                        <thead>
+                            <tr>
+                                <th>Sr.No.</th>
+                                <th>Grant Proposal</th>
+                                <th>Type of Grant</th>
+                                <th>Title of Project</th>
+                                <th>Thrust area of Research</th>
+                                <th>Name of Funding Agency</th>
+                                <th>Funding Amount</th>
+                                <th>Status of Research Project</th>
+                                <th>Submission/Grant date</th>
+                                <th>Upload Supporting Documents</th>
+                                <th>Action</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>Gaurav</td>
+                                <td>Nothing</td>
+                                <td>The mastica land</td>
+                                <td>Science</td>
+                                <td>Tata group</td>
+                                <td>5000000000000</td>
+                                <td>submitted</td>
+                                <td>12/11/2023</td>
+                                <td>image</td>
+                                <td>
+                                    <a class="edit-btn" data-faculty-id="83"><i class="fas fa-eye text-dark"></i></a>
+                                    <a class="edit-btn" data-faculty-id="86"><i class="fa fa-edit text-success"></i></a>
+                                    <a class="delete-btn" data-faculty-id="86"><i class="fa fa-trash text-danger"></i></a>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    </div>
+                </div>
+            </div>    
+        </div>     
+    </main>
+
+    <!-- model -->
+    <div class="modal fade" id="sudyModel" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-xl modal-fullscreen" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Research Project, Consultancy</h5>
+                    <div class="close" data-dismiss="modal" data-target="#exampleModal" id="close">
+                        <i class="fas fa-times fa-2x"></i>
+                    </div>
+                    <!-- <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button> -->
+                </div>
+                <div class="modal-body custom-model">
+                    <!-- Form code section -->
+                    <div class="base-section coustom-section shadow mt-5">
+                        <h3 class="text-center">Research Project, Consultancy</h3>
+                        <div class="row mt-5">
+                            <!-- Grant Proposal -->
+                            <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                                <label for="publisherCatergory" class="form-label fw-bold mb-3">Grant Proposal</label><br>
+                                <div class="form-check-inline">
+                                    <label for="goverment" class="form-check-label" >
+                                      <input type="radio" class="form-check-input" id="goverment" name="radio" value="Goverment"> Goverment
+                                    </label>
+                                </div>
+                                <div class="form-check-inline">
+                                    <label for="nonGoverment" class="form-check-label" >
+                                      <input type="radio" class="form-check-input" id="nonGoverment" name="radio" value="Non-government"> Non-government
+                                    </label>
+                                </div>
+                            </div>
+                            <!-- Type of Grant -->
+                            <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                                <label for="typeOfGrant" class="form-label fw-bold mb-3">Type of Grant</label><br>
+                                <div class="form-check-inline">
+                                    <label for="researchProject" class="form-check-label" >
+                                      <input type="radio" class="form-check-input" id="researchProject" name="grant" value="Research Project"> Research Project
+                                    </label>
+                                </div>
+                                <div class="form-check-inline">
+                                    <label for="consultancy" class="form-check-label" >
+                                      <input type="radio" class="form-check-input" id="consultancy" name="grant" value="Consultancy"> Consultancy
+                                    </label>
+                                </div>
+                                <div class="form-check-inline">
+                                    <label for="capacityBuilding" class="form-check-label" >
+                                      <input type="radio" class="form-check-input" id="capacityBuilding" name="grant" value="Capacity Building"> Capacity Building
+                                    </label>
+                                </div>
+                            </div>
+                            <!-- Title of Project -->
+                            <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                                <label for="title" class="form-label fw-bold">Title of Project</label>
+                                <input type="text" name="titleInvention" id="title" class="form-control" placeholder="Title of Project">
+                            </div>
+                            <!-- Thrust area of Research -->
+                            <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                                <label for="title" class="form-label fw-bold">Thrust area of Research</label>
+                                <input type="text" name="titleInvention" id="title" class="form-control" placeholder="Thrust area of Research">
+                            </div>
+                            <!-- Name of Funding Agency -->
+                            <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                                <label for="title" class="form-label fw-bold">Name of Funding Agency</label>
+                                <input type="text" name="titleInvention" id="title" class="form-control" placeholder="Name of Funding Agency">
+                            </div>
+                            <!-- Funding Amount -->
+                            <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                                <label for="title" class="form-label fw-bold">Funding Amount</label>
+                                <input type="text" name="titleInvention" id="title" class="form-control" placeholder="Funding Amount">
+                            </div>
+                            <!-- Status of Research Project -->
+                            <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                                <label for="Status" class="form-label fw-bold mb-3">Status of Research Project</label><br>
+                                <div class="form-check-inline">
+                                    <label for="submited" class="form-check-label" >
+                                      <input type="radio" class="form-check-input" id="submited" name="research" value="Submitted"> Submitted
+                                    </label>
+                                </div>
+                                <div class="form-check-inline">
+                                    <label for="presentation" class="form-check-label" >
+                                      <input type="radio" class="form-check-input" id="presentation" name="research" value="Presentation held"> Presentation held
+                                    </label>
+                                </div>
+                                <div class="form-check-inline">
+                                    <label for="granted" class="form-check-label" >
+                                      <input type="radio" class="form-check-input" id="granted" name="research" value="Granted"> Granted
+                                    </label>
+                                </div> 
+                            </div>
+                            <!-- Submission/Grant date-->
+                            <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                                <label for="applicationNumbar" class="form-label fw-bold">
+                                    Submission/Grant date
+                                </label>
+                                <input type="date" name="titleInvention" id="applicationNumbar" class="form-control">
+                            </div>
+                            <!-- if faculty choose internal Authors then show search bar -->
+                            <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                                <label for="coo-pi" class="form-label fw-bold mb-3">Grant Proposal</label><br>
+                                <div class="form-check-inline">
+                                    <label for="Internal" class="form-check-label" >
+                                      <input type="radio" class="form-check-input" id="Internal" name="co-pi" value="Internal"> Internal
+                                    </label>
+                                </div>
+                                <div class="form-check-inline">
+                                    <label for="External" class="form-check-label" >
+                                      <input type="radio" class="form-check-input" id="External" name="co-pi" value="External"> External
+                                    </label>
+                                </div>
+                            </div>
+                            <!-- Upload Supporting Documents-->
+                            <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                                <label for="upload" class="form-label fw-bold">
+                                    Upload Supporting Documents
+                                </label>
+                                <input type="file" name="uploadFile" id="upload" class="form-control" min='2000-01-01' max="2023-10-02">
+                            </div>
+            
+                            <div class="modal-footer">
+                                <!-- Add your modal footer buttons if needed -->
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                <button class="btn btn-md btn-success" id="submitBtn">Submit</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>    
+            </div>
+        </div>
+    </div>
+    <!-- bootstrap js -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="../js/script.js"></script>
+</body>
+
+</html>

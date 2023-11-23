@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Bootstrap CSS -->
+    <!-- Local Bootstrap CSS -->
+    <link rel="stylesheet" href="../style/bs.md.css">
+
+    <!-- Font Awesome CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+    <link rel="stylesheet" href="../style/admin-style.css" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.1/css/select2.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="../style/admin-simpleAlert.css" />
+
+    <title>Research Seminars at NMIMS</title>
+    <link rel="icon" type="image/x-icon" href="../images/logo-nmims.png" />
+</head>
+
+<body>
+    <!-- This is left sidebar  -->
+    <aside class="left-sidebar" id="openSideBar">
+        <div class="left-sidebar-logo">
+            <a href="/vf/dashboard">
+                <img src="../images/logo-nmims.png" class="nmims-logo" />
+            </a>
+            <!-- This is left sidebar content -->
+        </div>
+        <ul class="offset-list offcanvas-body p-0 sidebar-body" id="left-sidebar-accordion hello">
+            <a href="../html/dashboard.html" class="offset-list-item-link ">
+                <li class="active-sidebar"><img src="../images/dashboard.png" class="ps-3 pe-2 sidebar-icon"> Dashboard
+                </li>
+            </a>
+            <!-- research -->
+            <li data-toggle="collapse" data-target="#collapse" aria-expanded="true">
+                <a class="offset-list-item-link" >
+                    <img src="../images/Research.png" class="ps-2 pe-2 sidebar-icon">Research
+                </a>
+                <div class="collapse" id="collapse">
+                    <ul class="nav flex-column ml-2">
+                        <a class="offset-list-item-link" href="../html/research-journal.html">
+                            <li class="nav-item">
+                                <img src="../images/Research.png"  class="ps-3 pe-2 icon">
+                                Research Journal Paper
+                            </li>
+                        </a>
+                        <a class="offset-list-item-link" href="../html/book-publication-main.html">
+                            <li class="nav-item">
+                                <img src="../images/book-publication.png"  class="ps-3 pe-2 icon">
+                                Book Publications
+                            </li>
+                        </a>
+                    
+                    
+                        <a class="offset-list-item-link" href="../html/conference-publication.html">
+                            <li class="nav-item">
+                                <img src="../images/conference.png"  class="ps-3 pe-2 icon">
+                                    Conference Publications
+                            </li>
+                        </a>
+                    
+                    
+                        <a class="offset-list-item-link" href="../html/patent-submission.html">
+                            <li class="nav-item">
+                                <img src="../images/submission-grant.png"  class="ps-3 pe-2 icon">
+                                Patent Submissions and Grant
+                            </li>
+                        </a>
+                                            
+                        <a class="offset-list-item-link" href="../html/research-project.html">
+                            <li class="nav-item">
+                                <img src="../images/consultancy.png"  class="ps-3 pe-2 icon">
+                                Research Project, Consultancy
+                            </li>
+                        </a>                        
+                            
+                        <a class="offset-list-item-link" href="../html/research-seminar.html">
+                            <li class="nav-item">
+                                <img src="../images/meeting.png"  class="ps-3 pe-2 icon">
+                                Research Seminars at NMIMS
+                            </li>
+                        </a>
+                    
+                        <a class="offset-list-item-link" href="../html/case-study.html">
+                            <li class="nav-item">
+                                <img src="../images/study.png"  class="ps-3 pe-2 icon">
+                                Case Study
+                            </li>
+                        </a>
+                          
+                    </ul>
+                </div>
+            </li>
+            <a href="../html/teaching-excellance.html" class="offset-list-item-link">
+                <li><img src="../images/excellence.png" height="24" class="ps-3 pe-2 sidebar-icon"> Teaching Excellence
+                </li>
+            </a>
+            <a href="../html/meeting-stackholders.html" class="offset-list-item-link">
+                <li><img src="../images/meeting.png" height="24" class="ps-3 pe-2 sidebar-icon"> Meeting Stakeholders</li>
+            </a>
+            <a href="../html/branding-advertising.html" class="offset-list-item-link">
+                <li><img src="../images/advertising.png" height="24" class="ps-3 pe-2 sidebar-icon">
+                    Branding & Advertising
+                </li>
+            </a>
+            <a href="#" class="offset-list-item-link">
+                <li><img src="../images/incentive.png" class="ps-3 pe-2 sidebar-icon"> Research Incentive Page
+                </li>
+            </a>
+            <a href="#" class="offset-list-item-link">
+                <li><img src="../images/edition.png" height="24" class="ps-3 pe-2 sidebar-icon">
+                    Chronicle Edition
+                </li>
+            </a>
+            <a href="#" class="offset-list-item-link">
+                <li><img src="../images/policy.png" height="24" class="ps-3 pe-2 sidebar-icon">
+                    Incentive Policy
+                </li>
+            </a>
+            <a href="#" class="offset-list-item-link">
+                <li><img src="../images/school.png" height="24" class="ps-3 pe-2 sidebar-icon">
+                    Other School Incentive Policy
+                </li>
+            </a>
+            <a href="#" class="offset-list-item-link">
+                <li><img src="../images/analysis.png" height="24" class="ps-3 pe-2 sidebar-icon">Sample Analysis
+                </li>
+            </a>
+            <a href="#" class="offset-list-item-link">
+                <li><img src="../images/logout.png" class="ps-2 pe-2 sidebar-icon"> Logout</li>
+            </a>
+        </ul>
+    </aside>
+    <!-- Navbar section -->
+    <header>
+        <nav class="top-navbar d-flex justify-content-xl-end justify-content-between   align-items-center"
+            id="navbarHeading">
+            <a href="/vf/dashboard"><img src="../images/logo-nmims.png" alt="NMIMS LOGO"
+                    class="nmims-logo-smalldevices me-auto"></a>
+            <div class="navbar-logo d-none me-auto">
+                <a href="/vf/dashboard"> <img src="../images/logo-nmims.png" class="nmims-logo"> </a>
+            </div>
+            <!--Close Arrow toggle button -->
+            <button class="me-auto left-sidebar-toggle" style="border: none; outline: none; background-color: white;"
+                id="closeToggleBtn">
+                <i class="fa-solid fa-angles-left"></i>
+            </button>
+
+            <ul class="top-navbar__list">
+
+                <li style="color: #fc6964;"><img src="../images/research-admin.png" class="ps-3 pe-2">&nbsp;32200193_ADMIN
+                </li>
+
+                <li><a href="" class="d-none text-dark"><img src="../images/notification.png" alt=""> Notification</a>
+                </li>
+
+                <div class="btn-group">
+                    <button class="btn btn-white dropdown-toggle" type="button" id="defaultDropdown"
+                        data-bs-toggle="dropdown" data-bs-auto-close="true" aria-expanded="false">
+                        <img src="../images/user.png" alt="">
+                        Hi! ADMIN
+                    </button>
+
+                    <!-- Dropdown menu userprofile -->
+                    <ul class="dropdown-menu userprofile-dropdown-menu" aria-labelledby="defaultDropdown"
+                        id="showDropDown">
+                        <li>
+                            <a class="dropdown-item" href="/vf/change-password">
+                                <i class="fas fa-user-cog"></i>
+                                Change Password
+                            </a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="/vf/manage-account">
+                                <i class="fas fa-user-circle"></i>
+                                Manage account
+                            </a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="/vf/logout">
+                                <i class="fas fa-sign-out-alt"></i>
+                                Signout
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </ul>
+            <div class="hamburger-smalldevices"><img src="../images/HamburgerIcon.png" alt="" width="24px" height="20px" id="hamburger">
+            </div>
+        </nav>
+    </header>
+    <!-- This is Table -->
+    <main class="main" id="mainContent">
+        <div class="base-section coustom-section">
+            <div class="card table-card">
+                <div class="card-header table-card-header text-uppercase d-flex align-items-center justify-content-between">
+                    <div>
+                        <h5>Research Journal Paper</h5>
+                    </div>
+                    <div>
+                        <a class="btn btn-danger" href="#"><i class="fas fa-download"></i> Download </a> 
+                        <button class="btn add-btn ms-auto" data-toggle="modal" data-target="#sudyModel" >
+                            <i class="fas fa-plus"></i>
+                        </button>                        
+                    </div>
+                </div>
+                
+                <div class="card-body table-responsive">
+                    <div class="d-flex justify-content-between">
+                        <div>
+                            <label>Show Entry</label>
+                            <select class="form-select" id="changeEntry">
+                                   <option value="10">10</option>
+                                   <option value="25">25</option>
+                                   <option value="50">50</option>
+                                   <option value="100">100</option>
+                                   <option value="150">150</option>
+                                   <option value="200">200</option>
+                                   <option value="250">250</option>
+                                   <option value="300">300</option>
+                                   <option value="350">350</option>
+                                   <option value="400">400</option>
+                                   <option value="500">500</option>
+                                   <option value="800">800</option>
+                                   <option value="1000">1000</option>
+                            </select>
+                        </div>
+                        <div>
+                            <div class="table-searchbar-container"><button type="button"><i class="fas fa-search"></i></button><input type="search" id="searchkeyword" placeholder="Enter keywords" class="table-searchbar"></div>
+                        </div>
+                    </div>
+        
+                    <table class="table custom-table" id="facultyTable">
+                        <thead>
+                            <tr>
+                                <th>Sr.No.</th>
+                                <th>Year</th>
+                                <th>School</th>
+                                <th>Campus</th>
+                                <th>Policy Cadre</th>
+                                <th>Total No. of Authors</th>
+                                <th>Date of Publishing</th>
+                                <th>UID</th>
+                                <th>Action</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>2023</td>
+                                <td>School of Science</td>
+                                <td>NMIMS MUMBAI</td>
+                                <td>National</td>
+                                <td>SDG25896314</td>
+                                <td>12-10-2023</td>
+                                <td>UID25686</td>
+                                <td>
+                                    <a class="edit-btn" data-faculty-id="83"><i class="fas fa-eye text-dark"></i></a>
+                                    <a class="edit-btn" data-faculty-id="86"><i class="fa fa-edit text-success"></i></a>
+                                    <a class="delete-btn" data-faculty-id="86"><i class="fa fa-trash text-danger"></i></a>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    </div>
+                </div>
+            </div>    
+        </div>     
+    </main>
+
+    <!-- This is model -->
+    <div class="modal fade" id="sudyModel" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-xl modal-fullscreen" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Research Journal Paper</h5>
+                    <div class="close" data-dismiss="modal" data-target="#exampleModal" id="close">
+                        <i class="fas fa-times fa-2x"></i>
+                    </div>
+                    <!-- <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button> -->
+                </div>
+                <div class="modal-body custom-model">
+                    <!-- Form code section -->
+                    <div class="base-section coustom-section shadow mt-5">
+                        <h3 class="text-center mb-5">Research Journal Paper</h3>
+                        <div class="row">
+                            <!-- Date -->
+                            <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                                <label for="year" class="form-label fw-bold">Year</label>
+                                <input type="text" name="years" id="year" class="form-control" placeholder="2023" />
+                            </div>
+                            <!-- school -->
+                            <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                                <label for="school" class="form-label fw-bold">School</label>
+                                <input type="text" name="nameofschool" id="school" class="form-control" placeholder="Name of school">
+                            </div>
+                            <!-- Campus -->
+                            <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                                <label for="campus" class="form-label fw-bold">Campus</label>
+                                <input type="text" name="nameofCampus" id="campus" class="form-control" placeholder="Name of Campus"/>
+                            </div>
+                            
+                            <!--Policy Cadre -->
+                            <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                                <label for="policyCadre" class="form-label fw-bold">Policy Cadre</label>
+                                <input type="text" name="policy-cadre" id="policyCadre" class="form-control" placeholder="policyCadre"/>
+                            </div>
+                            <!-- Choose one option Research Journal Paper-->
+                            <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                                <label class="form-label fw-bold mb-3">Which type of Research Journal Paper</label><br>
+                                <div class="form-check-inline">
+                                    <label for="international" class="form-check-label" >
+                                      <input type="radio" class="form-check-input" id="international" name="radio" value="International"> International
+                                    </label>
+                                </div>
+                                <div class="form-check-inline">
+                                    <label for="national" class="form-check-label" >
+                                      <input type="radio" class="form-check-input" id="national" name="radio" value="National"> National
+                                    </label>
+                                </div>
+                            </div>
+                            <!-- All authors -->
+                            <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                                <label for="allAuthors" class="form-label fw-bold">All authors</label>
+                                <input type="text" name="all-authors" id="allAuthors" class="form-control" placeholder="All authors">
+                            </div>
+                            <!-- Total No. of Authors -->
+                            <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                                <label for="totalAuthors" class="form-label fw-bold">Total No. of Authors</label>
+                                <input type="text" name="total-authors" id="totalAuthors" class="form-control" placeholder="Total No. of Authors">
+                            </div>
+                            <!-- Name of NMIMS Authors -->
+                            <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                                <label for="NMIMSAuthors" class="form-label fw-bold">Name of NMIMS Authors</label>
+                                <input type="text" name="nmims-authors" id="NMIMSAuthors" class="form-control" placeholder="Name of NMIMS Authors">
+                            </div>
+                            <!-- No. of NMIMS Authors -->
+                            <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                                <label for="NMIMSAuthors" class="form-label fw-bold">No. of NMIMS Authors</label>
+                                <input type="text" name="volumes" id="NMIMSAuthors" class="form-control" placeholder="No. of NMIMS Authors">
+                            </div>
+                    
+                             <!-- Count of Other Faculty -->
+                             <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                                <label for="countOtherFaculty" class="form-label fw-bold">Count of Other Faculty</label>
+                                <input type="number" name="count-other-faculty" id="countOtherFaculty" class="form-control" placeholder="Count of Other Faculty"/>
+                            </div>
+                    
+                            <!-- Title of Paper -->
+                            <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                                <label for="titleOfPaper" class="form-label fw-bold">Title of Paper</label>
+                                <input type="text" name="title-of-paper" id="titleOfPaper" class="form-control" placeholder="Title of Paper">
+                            </div>
+                            <!-- Journal Name -->
+                            <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                                <label for="journalName" class="form-label fw-bold">Journal Name</label>
+                                <input type="text" name="journal-name" id="journalName" class="form-control" placeholder="Journal Name">
+                            </div>
+                            <!-- Publisher -->
+                            <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                                <label for="publisher" class="form-label fw-bold">
+                                    Publisher
+                                </label>
+                                <input type="text" name="publisher" id="publisher" class="form-control"/>
+                            </div>
+                            <!-- Volume -->
+                            <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                                <label for="volume" class="form-label fw-bold">Volume (Vols)</label>
+                                <input type="text" name="impact" id="volume" class="form-control" placeholder="Volume">
+                            </div>
+                            <!-- Iss -->
+                            <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                                <label for="iss" class="form-label fw-bold">ISS</label>
+                                <input type="text" name="iss" id="iss" class="form-control" placeholder="ISS">
+                            </div>
+                            <!-- Pages-->
+                            <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                                <label for="page" class="form-label fw-bold">Pages</label>
+                                <input type="text" name="pages" id="page" class="form-control" placeholder="Pages">
+                            </div>
+                            <!-- ISSN No. -->
+                            <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                                <label for="issNo" class="form-label fw-bold">ISSN No.</label>
+                                <input type="text" name="iss-no" id="issNo" class="form-control" placeholder="ISSN No.">
+                            </div>
+                            <!-- Date of Publishing -->
+                            <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                                <label for="dateOfPublishig" class="form-label fw-bold">Date of Publishing</label>
+                                <input type="date" name="dop" id="gsIndex" class="form-control" placeholder="Date of Publishing">
+                            </div>
+                            <!-- Impact Factor -->
+                            <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                                <label for="impactFactor" class="form-label fw-bold">Impact Factor</label>
+                                <input type="text" name="impactFactors" id="impactFactor" class="form-control" placeholder="Impact Factor">
+                            </div>
+                            <!-- SCS Cite Score -->
+                            <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                                <label for="scsCiteScore" class="form-label fw-bold">SCS Cite Score</label>
+                                <input type="number" name="scsCiteScores" id="scsCiteScore" class="form-control" placeholder="SCS Cite Score">
+                            </div>
+                            <!-- SCS Indexed -->
+                            <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                                <label for="scsIndexed" class="form-label fw-bold">SCS Indexed</label>
+                                <input type="text" name="scs-indexed" id="scsIndexed" class="form-control" placeholder="SCS Indexed">
+                            </div>
+                            <!-- WoS Indexed -->
+                            <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                                <label for="wosIndexed" class="form-label fw-bold">WoS Indexed</label>
+                                <input type="text" name="wos-indexed" id="wosIndexed" class="form-control" placeholder="WoS Indexed">
+                            </div>
+                    
+                            <!-- GS Indexed -->
+                            <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                                <label for="gsIndex" class="form-label fw-bold">GS Indexed</label>
+                                <input type="text" name="gs-indexed" id="gsIndex" class="form-control" placeholder="GS Indexed">
+                            </div>
+                    
+                            <!-- ABDC Indexed -->
+                            <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                                <label for="abdcIndexed" class="form-label fw-bold">ABDC Indexed</label>
+                                <input type="text" name="abdc-indexed" id="abdcIndexed" class="form-control" placeholder="ABDC Indexed">
+                            </div>
+                            <!-- UGC Indexed -->
+                            <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                                <label for="ugcIndexed" class="form-label fw-bold">UGC Indexed</label>
+                                <input type="text" name="abdc-indexed" id="ugcIndexed" class="form-control" placeholder="UGC Indexed">
+                            </div>
+                            <!-- Weblink-DOI Number -->
+                            <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                                <label for="webLink" class="form-label fw-bold">UGC Indexed</label>
+                                <input type="text" name="webLinks" id="webLink" class="form-control" placeholder="Weblink-DOI Number">
+                            </div>
+                            <!-- UID -->
+                            <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                                <label for="uid" class="form-label fw-bold">UID</label>
+                                <input type="text" name="uid-number" id="uid" class="form-control" placeholder="UID Number">
+                            </div>
+                            <!-- Button -->
+                            <div class="modal-footer">
+                                <!-- Add your modal footer buttons if needed -->
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                <button class="btn btn-md btn-success" id="submitBtn">Submit</button>
+                            </div>
+                        </div>  
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- bootstrap js -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="../js/script.js"></script>
+</body>
+
+</html>
+
+
