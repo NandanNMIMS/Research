@@ -11,19 +11,16 @@ closeToggleBtn.addEventListener("click", () => {
 });
 // Show userProfile drop down
 const defaultDropdown = document.getElementById("defaultDropdown");
-defaultDropdown.addEventListener("click", () => {
+defaultDropdown.addEventListener("click", (event) => {
     const showDropDown = document.getElementById("showDropDown");
     showDropDown.classList.toggle("show");
-
+    event.stopPropagation();
 });
-
-// show side-bar when click on hamburger
-// let hamburger = document.getElementById("hamburger");
-// hamburger.addEventListener("click", () => {
-//     const openSideBar = document.getElementById("openSideBar");
-//     openSideBar.classList.toggle("left-sidebar-open")
-//     // alert("click")
-// })
+document.addEventListener("click", (event) => {
+    if (!showDropDown.contains(event.target) && !defaultDropdown.contains(event.target)) {
+        showDropDown.classList.remove("show");
+    }
+})
 let hamburger = document.getElementById("hamburger");
 hamburger.addEventListener("click", (event) => {
     let openSideBar = document.getElementById("openSideBar");
