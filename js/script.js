@@ -34,3 +34,10 @@ document.addEventListener("click", (event) => {
         openSideBar.classList.remove("left-sidebar-open");
     }
 });
+
+
+demo('nandan');
+
+function demo(name){
+    
+}
